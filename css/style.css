@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -78,10 +82,6 @@ body {
     font-size: 2.5rem
 }
 
-p {
-    font-size: 0.9rem
-}
-
 .mine-scroll {
     padding: 0 0 2.5%
 }
@@ -96,12 +96,261 @@ p {
 
 /*--------------------SECTION-2-------------------*/
 
-/*
 .mine-section-2 {
     background-color: #00b6b6;
-    padding: 3rem 0;
+    padding: 1rem 0;
 }
-*/
+
+.mine-h-section {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.mine-p-section-2 {
+    color: white;
+}
+
+/*----------------------SECTION-3----------------------*/
+
+.mine-section-3 {
+    background-color: #70bfff;
+    padding: 1rem 0
+}
+
+.mine-beam {
+    background-color: white;
+    margin-bottom: 1rem;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.55);
+}
+
+.mine-beam:last-of-type {
+    margin-bottom: 2.1rem;
+}
+
+.mine-beam:first-of-type {
+    margin-top: 0.9rem;
+}
+
+.mine-beam p {
+    margin: 0;
+    font-weight: 700
+}
+
+.mine-beam .mine-img {
+    padding: 0.5rem 0;
+    border-left: 1px solid #9d9d9d;
+    display: flex;
+    height: 70px;
+}
+
+.mine-background-section-3 {
+    position: relative;
+}
+
+.mine-background-section-3 p {
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%)
+}
+
+.mine-img img {
+    width: 40%;
+    height: auto;
+
+}
+
+/* ----------------------SECTION-4----------------------*/
+
+.mine-section-4 {
+    background-color: #ffe92f;
+    padding: 1rem 0
+}
+
+.mine-h-seciton-4 {
+    color: black;
+}
+
+.mine-gallery {
+    padding-bottom: 1rem;
+
+}
+
+.mine-gallery:last-of-type {
+    padding-bottom: 0;
+
+}
+
+.mine-mini-photo-a {
+    padding-bottom: 1rem;
+
+}
+
+.mine-mini-gallery {
+    display: flex;
+}
+
+.mine-btn-section-4 {
+    background-color: #5585a2;
+    margin-top: 1rem;
+}
+
+.mine-gallery-img {
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------------------SECTION-5----------------------*/
+
+.mine-section-5 {
+    padding: 1rem 0;
+}
+
+.mine-btn-section-5 {
+    background-color: #96b92c;
+}
+
+.mine-email {
+    border-radius: 0;
+    border: 1px solid;
+}
+
+/* ---------------------SECTION-6----------------------*/
+
+.mine-section-6 {
+    padding: 1rem 0;
+    background-color: #b07cf7
+}
+
+.mine-btn-section-6 {
+    background-color: #f72b3b
+}
+
+.mine-blog {
+
+    background-size: cover;
+    max-height: 320px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.mine-blog-date {
+    width: 55px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    margin: 1rem;
+}
+
+.mine-blog-date p {
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.8rem
+}
+
+.mine-blog-date p:last-of-type {
+    font-size: 1.2rem
+}
+
+.mine-blog-title {
+    position: absolute;
+    bottom: 0;
+    padding: 3rem 1rem 1rem;
+    margin-right: 15px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    max-width: 372px
+}
+
+.mine-blog-title p {
+    margin-bottom: 0;
+    color: white
+}
+
+.mine-blog-title h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/* ----------------------SECTION-7----------------------*/
+
+.mine-section-7 {
+    padding: 1rem 0;
+    background: url(../images/contact-background.png) no-repeat center center;
+    background-size: cover;
+
+}
+
+.mine-form-input {
+    margin-bottom: .75rem;
+    background-color: rgba(0, 196, 196, 0.5);
+    outline: none;
+    border: none;
+    border-radius: 0;
+    resize: none;
+    color: white;
+}
+
+.mine-form-input::placeholder {
+    color: white
+}
+
+textarea.mine-form-input {
+    height: 15rem;
+}
+
+.address p:first-of-type {
+    margin: 0;
+    font-weight: 700;
+}
+
+.address p {
+    color: white;
+    line-height: 1.2rem;
+}
+
+.address {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0 15px;
+}
+
+/*-----------------------FOOTER------------------------ */
+
+footer {
+    background-color: #262626;
+    padding: 1rem 0;
+}
+
+.mine-footer p {
+    color: white;
+    margin: 0;
+    line-height: 2rem
+}
+
+.mine-footer p span {
+    color: #ff2b58;
+    font-weight: 700
+}
+
+.mine-brand {
+    font-family: pacifico;
+    font-size: 1.5rem
+}
+
+.mine-footer-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
 
 /* -----------------------MEDIA----------------------- */
 
@@ -116,8 +365,160 @@ p {
     .mine-section-1 {
         background-position: center;
     }
+    .mine-section-2 {
+        padding: 2rem 0;
+    }
+    .mine-section-3 {
+        padding: 2rem 0;
+    }
+    .mine-section-4 {
+        padding: 2rem 0;
+    }
+    .mine-section-6 {
+        padding: 2rem 0;
+    }
+    .mine-img img {
+        width: 60%;
+    }
+    .mine-mini-gallery {
+        display: block;
+    }
+    .mine-gallery {
+        padding-bottom: .6rem
+    }
+    .mine-left-gallery {
+        padding-right: 0.3rem !important;
+    }
+    .mine-right-gallery {
+        padding-left: 0.3rem !important;
+    }
+    .mine-mini-photo-a {
+        padding-bottom: 0.3rem !important;
+
+    }
+    .mine-mini-photo-b {
+        padding-top: 0.3rem !important;
+    }
+    .mine-section-5 {
+        position: relative;
+        height: 300px;
+    }
+    .mine-background-section-5 {
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        width: 420px;
+    }
+    .mine-subscribe-left {
+        display: flex;
+        height: 268px;
+        align-items: center;
+    }
+    .mine-h-section-5 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .address p {
+        color: black
+    }
+    .address {
+        background-color: transparent;
+        margin: 0 0 0 2.5rem;
+    }
+
+
 }
 
-@media (min-width:992px) {}
+@media (min-width:992px) {
+    .mine-beam .mine-img {
+        height: 80px;
+    }
+    .mine-beam .mine-img {
+        height: 80px;
+    }
+    .mine-beam {
+        margin-bottom: 1.5rem;
+    }
+    .mine-gallery {
+        padding-bottom: .8rem
+    }
+    .mine-left-gallery {
+        padding-right: 0.4rem !important;
+    }
+    .mine-right-gallery {
+        padding-left: 0.4rem !important;
+    }
+    .mine-mini-photo-a {
+        padding-bottom: 0.4rem !important;
 
-@media (min-width:1200px) {}
+    }
+    .mine-mini-photo-b {
+        padding-top: 0.4rem !important;
+    }
+    .mine-background-section-5 {
+        width: 480px;
+    }
+
+    .mine-subscribe-left {
+        height: 298px;
+    }
+    .mine-section-5 {
+        height: 330px;
+    }
+    .address {
+        background-color: transparent;
+        margin: 0 0 0 5rem;
+    }
+
+}
+
+@media (min-width:1200px) {
+    .mine-beam .mine-img {
+        height: 90px;
+    }
+    .mine-beam {
+        margin-bottom: 1.7rem;
+    }
+    .mine-gallery {
+        padding-bottom: 1rem
+    }
+    .mine-left-gallery {
+        padding-right: 0.5rem !important;
+    }
+    .mine-right-gallery {
+        padding-left: 0.5rem !important;
+    }
+    .mine-mini-photo-a {
+        padding-bottom: 0.5rem !important;
+
+    }
+    .mine-mini-photo-b {
+        padding-top: 0.5rem !important;
+    }
+
+    .mine-background-section-5 {
+        width: auto;
+    }
+
+    .mine-subscribe-left {
+        height: 368px;
+    }
+    .mine-section-5 {
+        height: 400px;
+    }
+    .address {
+        background-color: transparent;
+        margin: 0 0 0 7.5rem;
+    }
+
+}
+
+@media (min-width:1500px) {
+    .mine-section-5 .container {
+        position: relative;
+
+    }
+    .mine-background-section-5 {
+        top: 1rem;
+    }
+}
