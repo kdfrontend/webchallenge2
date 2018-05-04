@@ -6,12 +6,12 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     box-sizing: border-box;
-
 }
 
 .container-fluid.mine-fluid {
     padding: 0;
 }
+
 
 /* ------------NAVBAR------------- */
 
@@ -21,13 +21,16 @@ body {
     padding-right: 0;
 }
 
+
 .mine-nav .navbar-brand {
     font-family: 'Pacifico';
     font-size: 2.5rem;
+    line-height: 1;
 }
 
 .mine-nav .nav-item {
     font-weight: 600;
+    padding: 0.3rem;
 }
 
 .mine-nav.navbar a.nav-link {
@@ -53,6 +56,45 @@ body {
     color: black;
     transition: 0.5s
 }
+
+.mine-nav .nav-link:focus {
+    color: black;
+}
+
+.fixed {
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 2px 14px -3px rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.mine-toggler {
+    margin-left: auto;
+}
+
+.mine-empty {
+    height: 66px;
+    display: none;
+}
+
+.mine-nav .row {
+    width: 1140px;
+    margin: auto;
+}
+
+.fixed .row {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 
 /* ---------------SECTION-1---------------- */
 
@@ -83,7 +125,8 @@ body {
 }
 
 .mine-scroll {
-    padding: 0 0 2.5%
+    padding: 0 0 1rem;
+    animation: slide-bottom 2s ease-in-out infinite;
 }
 
 .mine-0-padding {
@@ -91,7 +134,14 @@ body {
 }
 
 .mine-s1-text {
-    margin-top: -4%;
+    margin-top: 5%;
+}
+
+.mine-btn:hover {
+    color: white;
+    filter: saturate(200%);
+    transform: scale(1.05);
+    transition: 0.1s;
 }
 
 /*--------------------SECTION-2-------------------*/
@@ -159,8 +209,12 @@ body {
 .mine-img img {
     width: 40%;
     height: auto;
-
 }
+
+.mine-beam:hover {
+    animation: jello-vertical 1s both;
+}
+
 
 /* ----------------------SECTION-4----------------------*/
 
@@ -175,6 +229,7 @@ body {
 
 .mine-gallery {
     padding-bottom: 1rem;
+    overflow: hidden;
 
 }
 
@@ -197,8 +252,15 @@ body {
     margin-top: 1rem;
 }
 
-.mine-gallery-img {
+.mine-gallery-photo {
+    overflow: hidden;
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.mine-gallery-img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+
 }
 
 /* ---------------------SECTION-5----------------------*/
@@ -216,6 +278,11 @@ body {
     border: 1px solid;
 }
 
+.mine-email:focus {
+    box-shadow: 0px 0px 8px 0px rgba(81, 86, 196, 0.65);
+    border: 1px solid #5156c4;
+}
+
 /* ---------------------SECTION-6----------------------*/
 
 .mine-section-6 {
@@ -224,13 +291,11 @@ body {
 }
 
 .mine-btn-section-6 {
-    background-color: #f72b3b
+    background-color: #f72b3b;
+    margin-top: calc(1rem - 15px);
 }
 
 .mine-blog {
-
-    background-size: cover;
-    max-height: 320px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -279,6 +344,15 @@ body {
     font-size: 1.3rem;
 }
 
+.mine-blog-photo img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.mine-blog-photo {
+    overflow: hidden;
+}
+
 /* ----------------------SECTION-7----------------------*/
 
 .mine-section-7 {
@@ -295,7 +369,6 @@ body {
     border: none;
     border-radius: 0;
     resize: none;
-    color: white;
 }
 
 .mine-form-input::placeholder {
@@ -321,11 +394,20 @@ textarea.mine-form-input {
     margin: 0 15px;
 }
 
+.mine-form-input:focus {
+    background-color: rgba(0, 196, 196, 1);
+    border: none;
+    border-left: 3px solid #355b82;
+    box-shadow: none;
+    font-weight: 700;
+    color: white;
+}
+
 /*-----------------------FOOTER------------------------ */
 
 footer {
     background-color: #262626;
-    padding: 1rem 0;
+    padding: .2rem 0;
 }
 
 .mine-footer p {
@@ -352,6 +434,46 @@ footer {
 
 }
 
+.mine-footer-center a {
+    text-decoration: none;
+}
+
+/* ---------------------KEYFRAMES---------------------*/
+
+@keyframes slide-bottom {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(1rem);
+    }
+}
+
+@keyframes jello-vertical {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+        transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
 /* -----------------------MEDIA----------------------- */
 
 @media (min-width:576px) {
@@ -359,11 +481,17 @@ footer {
         background-size: cover;
         background-position: 35%
     }
+    .fixed .row {
+        width: 540px;
+    }
 }
 
 @media (min-width:768px) {
     .mine-section-1 {
         background-position: center;
+    }
+    .mine-scroll {
+        padding: 0 0 2rem;
     }
     .mine-section-2 {
         padding: 2rem 0;
@@ -375,6 +503,9 @@ footer {
         padding: 2rem 0;
     }
     .mine-section-6 {
+        padding: 2rem 0;
+    }
+    .mine-section-7 {
         padding: 2rem 0;
     }
     .mine-img img {
@@ -399,6 +530,9 @@ footer {
     .mine-mini-photo-b {
         padding-top: 0.3rem !important;
     }
+    .mine-btn-section-4 {
+        margin-top: 1.4rem;
+    }
     .mine-section-5 {
         position: relative;
         height: 300px;
@@ -418,6 +552,9 @@ footer {
         font-size: 2rem;
         font-weight: 700;
     }
+    .mine-btn-section-6 {
+        margin-top: calc(2rem - 15px);
+    }
     .address p {
         color: black
     }
@@ -425,7 +562,23 @@ footer {
         background-color: transparent;
         margin: 0 0 0 2.5rem;
     }
-
+    textarea.mine-form-input {
+        margin-bottom: 0;
+    }
+    footer {
+        padding: 1rem 0;
+    }
+    @keyframes slide-bottom {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(2rem);
+        }
+    }
+    .fixed .row {
+        width: 720px;
+    }
 
 }
 
@@ -455,6 +608,9 @@ footer {
     .mine-mini-photo-b {
         padding-top: 0.4rem !important;
     }
+    .mine-btn-section-4 {
+        margin-top: 1.2rem;
+    }
     .mine-background-section-5 {
         width: 480px;
     }
@@ -468,6 +624,9 @@ footer {
     .address {
         background-color: transparent;
         margin: 0 0 0 5rem;
+    }
+    .fixed .row {
+        width: 960px;
     }
 
 }
@@ -495,6 +654,9 @@ footer {
     .mine-mini-photo-b {
         padding-top: 0.5rem !important;
     }
+    .mine-btn-section-4 {
+        margin-top: 1rem;
+    }
 
     .mine-background-section-5 {
         width: auto;
@@ -509,6 +671,10 @@ footer {
     .address {
         background-color: transparent;
         margin: 0 0 0 7.5rem;
+    }
+
+    .fixed .row {
+        width: 1140px;
     }
 
 }
